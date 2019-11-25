@@ -1,15 +1,15 @@
 # customize the values below
 TARGET_REGION ?= cn-northwest-1
 AWS_PROFILE ?= default
-KOPS_STATE_STORE ?= s3://pahud-kops-state-store-zhy
-VPCID ?= vpc-bb3e99d2
+KOPS_STATE_STORE ?= s3://erk8s
+VPCID ?= vpc-0a193c43ab193130c
 MASTER_COUNT ?= 3
-MASTER_SIZE ?= m4.large
-NODE_SIZE ?= c5.large
+MASTER_SIZE ?= t2.medium
+NODE_SIZE ?= t2.medium
 NODE_COUNT ?= 2
 SSH_PUBLIC_KEY ?= ~/.ssh/id_rsa.pub
-KUBERNETES_VERSION ?= v1.13.10
-KOPS_VERSION ?= 1.13.0
+KUBERNETES_VERSION ?= v1.14.6
+KOPS_VERSION ?= 1.14.0
 
 # do not modify following values
 AWS_DEFAULT_REGION ?= $(TARGET_REGION)
